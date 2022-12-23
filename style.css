@@ -1,6 +1,105 @@
 * {
     margin: 0;
+    /* Margins are used to create space around elements, outside of any defined borders. */
     padding: 0;
+    /* Padding is used to create space around an element's content, inside of any defined borders. */
     box-sizing: border-box;
+    /* The box-sizing CSS property sets how the total width and height of an element is calculated. */
     font-family: 'Poppins', sans-serif;
+}
+
+.center {
+    max-width: 1100px;
+    /* The max-width CSS property sets the maximum width of an element. It prevents the used value of the width property from becoming larger than the value specified by max-width .*/
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    /* The display property specifies the display behavior (the type of rendering box) of an element. */
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+/*
+
+The border-bottom property is a shorthand property for (in the following order):
+
+border-bottom-width
+border-bottom-style
+border-bottom-color
+
+If border-bottom-color is omitted, the color applied will be the color of the text. 
+
+*/
+
+.logo {
+    color: #16507b;
+    width: 50%
+}
+
+.logo h2 {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+/* when its a class, starts with .  when id =  # */
+.menu {
+    text-align: right;
+    width: 80%;
+}
+
+
+.menu a {
+    color: #16507b;
+    justify-content: space-around;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.menu a:hover {
+    /* when the mouse pass by the surface*/
+    color: #124265;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+.menu .button-menu:hover {
+    color: white;
+    background-color: #124265;
+    font-size: 16px;
+}
+
+.menu .button-menu {
+    background-color: #007bff;
+    display: inline-block;
+    padding: 6px 12px;
+    /* decrease the background width */
+    color: white;
+    border-radius: 6px;
+    /* border curve */
+}
+
+.text {
+
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+section.main {
+
+    color: white;
+    background-image: url('images/back2.jpg');
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* parallax effect */
 }
