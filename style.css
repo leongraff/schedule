@@ -25,6 +25,14 @@ header {
     border-bottom: 1px solid rgb(200, 200, 200);
 }
 
+header:hover {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 3px solid purple;
+    transition-duration: 2s;
+}
+
 /*
 
 The border-bottom property is a shorthand property for (in the following order):
@@ -39,18 +47,26 @@ If border-bottom-color is omitted, the color applied will be the color of the te
 
 .logo {
     color: #16507b;
-    width: 50%
+    width: 100%;
 }
 
 .logo h2 {
     font-weight: normal;
     font-size: 22px;
+    width: 100%;
+}
+
+.logo h2:hover {
+    color: white;
+    font-weight: normal;
+    font-size: 22px;
+    transition-duration: 1.5s;
 }
 
 /* when its a class, starts with .  when id =  # */
 .menu {
     text-align: right;
-    width: 80%;
+    width: 100%;
 }
 
 
@@ -64,7 +80,7 @@ If border-bottom-color is omitted, the color applied will be the color of the te
 
 .menu a:hover {
     /* when the mouse pass by the surface*/
-    color: #124265;
+    color: white;
     font-size: 15px;
     text-decoration: none;
 
@@ -104,6 +120,7 @@ section.main {
     padding: 0 2%;
     display: flex;
     flex-wrap: wrap;
+    /* apply for flex containers */
 }
 
 .main_cta {
@@ -116,9 +133,10 @@ section.main {
 
 
 .main_cta h2 {
-    color: ghostwhite;
+    color: white;
     font-size: 40px;
     width: 100%;
+    animation: float 3s ease-in-out infinite;
 
 }
 
@@ -149,12 +167,14 @@ section.main {
 
 .diferenciais {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .diferencial-single {
     background-color: white;
-    width: 24%;
-    margin-right: 1%;
+    width: 22%;
+    margin-right: 3%;
+    margin-top: 10%;
     padding: 50px 20px;
     border-radius: 10px;
 }
@@ -164,20 +184,119 @@ section.main {
     font-size: 23px;
 }
 
+.diferencial-single i:hover {
+    color: red;
+    font-size: 24px;
+    transition-duration: 2s;
+}
+
 .diferencial-single h2 {
     color: #124265;
     margin: 10px 0;
     font-size: 17px;
 }
 
+.diferencial-single h2:hover {
+    color: red;
+    margin: 10px 0;
+    font-size: 18px;
+    transition-duration: 1s;
+}
+
 .diferencial-single p {
     font-size: 14px;
     color: gray;
     line-height: 30px;
+    border-radius: 10px;
 }
 
 .diferencial-single:hover {
-    background-color: aqua;
+    background-color: black;
+    color: white;
     transition-duration: 2s;
+    font-size: 22px;
     cursor: pointer;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translatey(0)
+    }
+
+    50% {
+        transform: translatey(-20px)
+    }
+}
+
+
+section.sobre {
+    padding: 80px 0;
+}
+
+.center3 {
+    max-width: 1100px;
+    /* The max-width CSS property sets the maximum width of an element. It prevents the used value of the width property from becoming larger than the value specified by max-width .*/
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chamada-sobre {
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre h2 {
+    color: #124265;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.chamada-sobre p {
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+
+
+}
+
+.conteudo-sobre {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+.conteudo-sobre p {
+    width: 48%;
+    margin-right: 2%;
+    color: #444444;
+}
+
+.conteudo-sobre span {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0px;
+
+}
+
+.conteudo-sobre i {
+    color: #007bff;
+
+
+}
+
+@media screen and (max-width:768px) {
+    .diferencial-single {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .conteudo-sobre p {
+        width: 100%;
+        margin: 20px 20px;
+    }
 }
