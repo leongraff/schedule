@@ -289,6 +289,30 @@ section.sobre {
 
 }
 
+.center4 {
+    max-width: 1100px;
+    /* The max-width CSS property sets the maximum width of an element. It prevents the used value of the width property from becoming larger than the value specified by max-width .*/
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.conquistas {
+    background-color: #f8fbfe;
+    padding: 8px 0;
+}
+
+.conquista-single {
+    width: 22%;
+    /* 100/4 = 25, there is an space between the 4 */
+    margin-right: 3%;
+    text-align: center;
+}
+
+.conquista-single h2 {
+    color: #124265;
+}
+
 @media screen and (max-width:768px) {
     .diferencial-single {
         width: 100%;
