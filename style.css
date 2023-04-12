@@ -107,7 +107,7 @@ section.main {
     background-image: url('images/back2.jpg');
     padding: 70px 0;
     background-position: center;
-    background-size: cover;
+    width: auto background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     /* parallax effect */
@@ -172,7 +172,7 @@ section.main {
 
 .diferencial-single {
     background-color: white;
-    width: 22%;
+    width: 17%;
     margin-right: 3%;
     margin-top: 10%;
     padding: 50px 20px;
@@ -211,6 +211,111 @@ section.main {
 }
 
 .diferencial-single:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 2s;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.diferencial-single2 {
+    display: block;
+    /* Necessário para o margin funcionar */
+    margin-left: auto;
+    /* aqui */
+    margin-right: 3px;
+    background-color: white;
+    width: 17%;
+    margin-right: 3%;
+    margin-top: 10%;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.diferencial-single2 i {
+    color: #124265;
+    font-size: 23px;
+}
+
+.diferencial-single2 i:hover {
+    color: red;
+    font-size: 24px;
+    transition-duration: 2s;
+}
+
+.diferencial-single2 h2 {
+    color: #124265;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.diferencial-single2 h2:hover {
+    color: red;
+    margin: 10px 0;
+    font-size: 18px;
+    transition-duration: 1s;
+}
+
+.diferencial-single2 p {
+    font-size: 14px;
+    color: gray;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+.diferencial-single2:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 2s;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.diferencial-single3 {
+    display: block;
+    /* Necessário para o margin funcionar */
+    margin-left: ;
+    /* aqui */
+    margin-right: auto;
+    background-color: white;
+    width: 17%;
+    margin-top: 10%;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.diferencial-single3 i {
+    color: #124265;
+    font-size: 23px;
+}
+
+.diferencial-single3 i:hover {
+    color: red;
+    font-size: 24px;
+    transition-duration: 2s;
+}
+
+.diferencial-single3 h2 {
+    color: #124265;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.diferencial-single3 h2:hover {
+    color: red;
+    margin: 10px 0;
+    font-size: 18px;
+    transition-duration: 1s;
+}
+
+.diferencial-single3 p {
+    font-size: 14px;
+    color: gray;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+.diferencial-single3:hover {
     background-color: black;
     color: white;
     transition-duration: 2s;
@@ -323,4 +428,14 @@ section.conquistas {
         width: 100%;
         margin: 20px 20px;
     }
+}
+
+.new-event {
+    width: 120px;
+    height: 20px;
+    background-color: #f2f2f2;
+    padding: 3px;
+    border: 1px solid #ccc;
+    color: #333;
+
 }
